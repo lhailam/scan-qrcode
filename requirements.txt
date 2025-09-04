@@ -1,0 +1,7 @@
+fastapi==0.112.0
+uvicorn[standard]==0.30.1
+qreader==3.13
+opencv-python-headless==4.10.0.84
+numpy>=1.24.0,<2.0.0
+pydantic==2.8.2
+
