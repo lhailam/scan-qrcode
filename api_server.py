@@ -21,7 +21,7 @@ IMAGE_EXTENSIONS = (".jpg", ".jpeg", ".png", ".bmp")
 
 
 
-@app.post("/health-check")
+@app.get("/health-check")
 def health_check() -> Dict[str, Any]:
     return {"status": "ok"}
 
