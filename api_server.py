@@ -20,6 +20,11 @@ app = FastAPI(title="QR Scan API")
 IMAGE_EXTENSIONS = (".jpg", ".jpeg", ".png", ".bmp")
 
 
+
+@app.post("/health-check")
+def health_check() -> Dict[str, Any]:
+    return {"status": "ok"}
+
 @app.post("/scan-image")
 def scan_image(payload: ImagePathPayload) -> Dict[str, Optional[str]]:
     path = payload.path
